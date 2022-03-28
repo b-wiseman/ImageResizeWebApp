@@ -5,6 +5,16 @@
 <!-- Client side libs required  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.25.2/css/blueimp-gallery.min.css" crossorigin="anonymous">
+<script>
+    src="http://code.jquery.com/jquery-latest.min.js"
+</script>
+<script>
+    $(function() {
+        $("#visible").click(function() {
+            $('#invisible').toggleClass("show");
+        });
+    });
+</script>
 
 <style>
     html {
@@ -44,6 +54,14 @@
         display: block;
         margin-top 1.5rem;
     }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
 </style>
 
 
@@ -51,30 +69,24 @@
 
 
     <div class="box header">
-        <h1><span class="fa fa-user-circle-o"></span> <span id="page-title">ImageResizer</span></h1>
-        <div class="navbar">
-                <div class="logo">
-                    <h1><span class="fa fa-user-circle-o"></span> <span id="page-title">ImageResizer</span></h1>
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li>
-                            <a href="about.html">ABOUT</a>
-                        </li>
-                    </ul>
-                </nav>
-                <img src="images/cart.png" width="30px" height="30px">
-                <img src="images/menu.png" class="menu-icon" onlick="menutoggle()">
+            <div class="logo">
+                <h1><span class="fa fa-user-circle-o"></span> <span id="page-title">ImageResizer</span></h1>
             </div>
+
     </div>
 
     <div class="box about">
         <hr>
-        <p>
+        <p id="visible">
+            About
+        </p>
+        <p id="invisible" class="hide">
+            This project is 
+            
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-             voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
         </p>
     </div>
     
