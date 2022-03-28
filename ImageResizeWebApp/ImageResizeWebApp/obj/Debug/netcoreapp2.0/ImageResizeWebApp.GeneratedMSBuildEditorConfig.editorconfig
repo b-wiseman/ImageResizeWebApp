@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = ImageResizeWebApp
+build_property.ProjectDir = \\wsl.localhost\Ubuntu\home\legitstitch\cloud-computing-linux\azure-blob-app-main\ImageResizeWebApp\ImageResizeWebApp\
